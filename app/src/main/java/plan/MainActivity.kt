@@ -1,9 +1,10 @@
-package com.example.travelPlanAndroidVer
+package plan
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.travelPlanAndroidVer.ui.theme.TravelPlanAndroidVerTheme
+import com.example.travelPlanAndroidVer.Main
+import plan.theme.TravelPlanAndroidVerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

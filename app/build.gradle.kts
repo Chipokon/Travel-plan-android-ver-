@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.travelPlanAndroidVer"
+    namespace = "travel.plan"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.travelPlanAndroidVer"
+        applicationId = "travel.plan"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -57,4 +57,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.navigation:navigation-compose:2.7.7")
 }

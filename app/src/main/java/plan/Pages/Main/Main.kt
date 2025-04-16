@@ -5,7 +5,7 @@ import androidx.compose.runtime.*
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.travelPlanAndroidVer.Pages.NewTrip.AddTripScreen
+import plan.Pages.NewTrip.AddTripScreen
 
 @Composable
 fun Main() {
