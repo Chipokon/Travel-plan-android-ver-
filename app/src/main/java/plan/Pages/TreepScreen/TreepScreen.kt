@@ -36,6 +36,9 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.travelPlanAndroidVer.TripsViewModel
+import plan.common.components.PlusButton
+
+
 // need for test
 @Composable
 fun TripsScreen(viewModel: TripsViewModel = viewModel(), navController: NavHostController) {
@@ -101,13 +104,13 @@ fun TripsScreen(viewModel: TripsViewModel = viewModel(), navController: NavHostC
             }
         }
 
-        FloatingActionButton(
+        PlusButton(
             onClick = { navController.navigate("addTrip") },
             modifier = Modifier
                 .align(alignment = androidx.compose.ui.Alignment.BottomEnd)
-                .padding(16.dp)
-        ) {
-            Icon(Icons.Default.Add, contentDescription = "Add")
-        }
+                .padding(16.dp),
+            icon = Icons.Default.Add,
+            contentDescription = "Add"
+        )
     }
 }
